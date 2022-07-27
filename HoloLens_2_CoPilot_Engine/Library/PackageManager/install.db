@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "packages": {
+    "com.microsoft.mixedreality.movingplatform": {
+      "tarball": {
+        "hash": "ed1d7fd94a47",
+        "mtime": 1652186369250,
+        "size": 807655,
+        "localPath": "J:\\Final Year Project\\Unity_App\\HoloLens_2_CoPilot_Engine\\Packages\\MixedReality\\com.microsoft.mixedreality.movingplatform-0.0.3.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.openxr": {
+      "tarball": {
+        "hash": "a4cc3ecd3f67",
+        "mtime": 1652186373708,
+        "size": 10611639,
+        "localPath": "J:\\Final Year Project\\Unity_App\\HoloLens_2_CoPilot_Engine\\Packages\\MixedReality\\com.microsoft.mixedreality.openxr-1.4.0.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.examples": {
+      "tarball": {
+        "hash": "38699c4ce8cf",
+        "mtime": 1652186396626,
+        "size": 55036630,
+        "localPath": "J:\\Final Year Project\\Unity_App\\HoloLens_2_CoPilot_Engine\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.examples-2.7.3.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.extensions": {
+      "tarball": {
+        "hash": "dd97a7745746",
+        "mtime": 1652186369274,
+        "size": 1130819,
+        "localPath": "J:\\Final Year Project\\Unity_App\\HoloLens_2_CoPilot_Engine\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.extensions-2.7.3.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.foundation": {
+      "tarball": {
+        "hash": "3bad99c89252",
+        "mtime": 1652186372815,
+        "size": 8670682,
+        "localPath": "J:\\Final Year Project\\Unity_App\\HoloLens_2_CoPilot_Engine\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.foundation-2.7.3.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.standardassets": {
+      "tarball": {
+        "hash": "2095abe3b61d",
+        "mtime": 1652186370532,
+        "size": 5303497,
+        "localPath": "J:\\Final Year Project\\Unity_App\\HoloLens_2_CoPilot_Engine\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.standardassets-2.7.3.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.testutilities": {
+      "tarball": {
+        "hash": "4e92ced1683c",
+        "mtime": 1652186368106,
+        "size": 18099,
+        "localPath": "J:\\Final Year Project\\Unity_App\\HoloLens_2_CoPilot_Engine\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.testutilities-2.7.3.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.tools": {
+      "tarball": {
+        "hash": "2c119bd3c146",
+        "mtime": 1652186370142,
+        "size": 2110451,
+        "localPath": "J:\\Final Year Project\\Unity_App\\HoloLens_2_CoPilot_Engine\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.tools-2.7.3.tgz"
+      }
+    }
+  }
+}
