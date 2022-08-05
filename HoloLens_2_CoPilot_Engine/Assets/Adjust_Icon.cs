@@ -37,8 +37,8 @@ public class Adjust_Icon : MonoBehaviour
 
     void RescaleArrow()
     {
-        desiredArrowScale = gameObject.GetComponent<ServerTwo>().receivedMag;
-        if (desiredArrowScale < 0.3) desiredArrowScale = 0.3f;
+        desiredArrowScale = gameObject.GetComponent<ServerTwo>().receivedMag/2;
+        if (desiredArrowScale < 0.3) desiredArrowScale = 0.15f;
         Arrow.transform.localScale = new Vector3(desiredArrowScale, desiredArrowScale, desiredArrowScale);
     }
 
@@ -48,6 +48,8 @@ public class Adjust_Icon : MonoBehaviour
         transform.position = startPos;
         transform.rotation = startRot;
         Arrow = GameObject.Find("ArrowContainer");
+        transform.Find("ArrowContainer/ArrowHead").GetComponent<MeshRenderer>().material.color = Color.red;
+        transform.Find("ArrowContainer/ArrowStem").GetComponent<MeshRenderer>().material.color = Color.blue;
     }
 
     // Update is called once per frame

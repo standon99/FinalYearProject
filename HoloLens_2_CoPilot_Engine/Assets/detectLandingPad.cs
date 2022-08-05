@@ -9,6 +9,7 @@ public class detectLandingPad : MonoBehaviour
     public Quaternion stickAngle = Quaternion.Euler(0, 0, 0);
     public float mag;
     public Vector3 current;
+    public bool showCollider = false;
 
 
     Quaternion landingLocation()
@@ -54,7 +55,7 @@ public class detectLandingPad : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform.Find("ColliderCube").GetComponent<MeshRenderer>().enabled = showCollider;
     }
 
     // Update is called once per frame

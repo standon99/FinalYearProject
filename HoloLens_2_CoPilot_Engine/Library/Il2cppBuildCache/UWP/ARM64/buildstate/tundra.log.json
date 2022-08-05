@@ -1,0 +1,3 @@
+{"msg":"init","dagFile":"J:/Final Year Project/Unity_App/HoloLens_2_CoPilot_Engine/Library/Il2cppBuildCache/UWP/ARM64/buildstate/bee.dag","targets":["FinalProgram"]}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"FinalProgram","enqueuedNodeIndex":2}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"IL2CPP_CodeGen J:/Final Year Project/Unity_App/HoloLens_2_CoPilot_Engine/Library/Il2cppBuildCache/UWP/ARM64/buildstate/artifacts/il2cpp_conv_aues.traceevents","enqueuedNodeIndex":1,"enqueueingNodeAnnotation":"FinalProgram","enqueueingNodeIndex":2}

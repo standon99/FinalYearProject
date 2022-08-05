@@ -11,8 +11,10 @@ public class ServerTwo : MonoBehaviour
 {
     System.Threading.Thread SocketThread;
     volatile bool keepReading = false;
-    public string localIP = "127.0.0.1";
-    public IPAddress setIpAddress = IPAddress.Parse("127.0.0.1");
+    //public static string localIP = "127.0.0.1"; // USE WHEN RUNNING ON LOCAL MACHINE FOR TESTING - GO LINE 45
+    public static string localIP = "160.69.69.125"; // 147 USE WHEN USING WITH HOLOLENS CONENCTED TO CARIS NETWORK
+    //public IPAddress setIpAddress = IPAddress.Parse("127.0.0.1");
+    public IPAddress setIpAddress = IPAddress.Parse(localIP);
     public int port = 5007;
     private static int velocityGenBracket = 3;
     public float receivedX, receivedY, receivedZ, receivedAX, receivedAY, receivedAZ, receivedMag;
@@ -39,7 +41,8 @@ public class ServerTwo : MonoBehaviour
     private string getIPAddress()
     {
         IPHostEntry host;
-        string setlocalIP = "127.0.0.1";
+        //string setlocalIP = "127.0.0.1"; // Old
+        string setlocalIP = "160.69.69.125";
         host = Dns.GetHostEntry(Dns.GetHostName());
         foreach (IPAddress ip in host.AddressList)
         {
@@ -47,7 +50,6 @@ public class ServerTwo : MonoBehaviour
             {
                 localIP = ip.ToString();
             }
-
         }
         return setlocalIP;
     }
