@@ -11,8 +11,8 @@ public class ServerTwo : MonoBehaviour
 {
     System.Threading.Thread SocketThread;
     volatile bool keepReading = false;
-    //public static string localIP = "127.0.0.1"; // USE WHEN RUNNING ON LOCAL MACHINE FOR TESTING - GO LINE 45
-    public static string localIP = "160.69.69.125"; // 147 USE WHEN USING WITH HOLOLENS CONENCTED TO CARIS NETWORK
+    public static string localIP = "127.0.0.1"; // USE WHEN RUNNING ON LOCAL MACHINE FOR TESTING - GO LINE 45
+    //public static string localIP = "160.69.69.125"; // 147 USE WHEN USING WITH HOLOLENS CONENCTED TO CARIS NETWORK
     //public IPAddress setIpAddress = IPAddress.Parse("127.0.0.1");
     public IPAddress setIpAddress = IPAddress.Parse(localIP);
     public int port = 5007;
@@ -41,8 +41,8 @@ public class ServerTwo : MonoBehaviour
     private string getIPAddress()
     {
         IPHostEntry host;
-        //string setlocalIP = "127.0.0.1"; // Old
-        string setlocalIP = "160.69.69.125";
+        string setlocalIP = "127.0.0.1"; // Old
+        // string setlocalIP = "160.69.69.125";
         host = Dns.GetHostEntry(Dns.GetHostName());
         foreach (IPAddress ip in host.AddressList)
         {
@@ -88,10 +88,10 @@ public class ServerTwo : MonoBehaviour
                 keepReading = true;
 
                 // Program is suspended while waiting for an incoming connection.
-                Debug.Log("Waiting for Connection");     //It works
+                //Debug.Log("Waiting for Connection");     //It works
 
                 handler = listener.Accept();
-                Debug.Log("Client Connected");     //It doesn't work
+                //Debug.Log("Client Connected");     //It doesn't work
                 data = null;
 
                 // An incoming connection needs to be processed.
@@ -99,7 +99,7 @@ public class ServerTwo : MonoBehaviour
                 {
                     bytes = new byte[1024];
                     int bytesRec = handler.Receive(bytes);
-                    Debug.Log("Received by Server");
+                    //Debug.Log("Received by Server");
 
                     if (bytesRec <= 0)
                     {
@@ -193,7 +193,7 @@ public class ServerTwo : MonoBehaviour
                             data = data.Replace(removeString, "");
                             receivedMag = float.Parse(data);
                             Debug.Log("Received Magnitude is ");
-                            Debug.Log(receivedMag);
+                            //Debug.Log(receivedMag);
                         }
                         //Debug.Log(data);
                         break;

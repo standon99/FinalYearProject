@@ -37,7 +37,7 @@ public class Adjust_Icon : MonoBehaviour
 
     void RescaleArrow()
     {
-        desiredArrowScale = gameObject.GetComponent<ServerTwo>().receivedMag/2;
+        desiredArrowScale = gameObject.GetComponent<ServerTwo>().receivedMag/2.5f;
         if (desiredArrowScale < 0.3) desiredArrowScale = 0.15f;
         Arrow.transform.localScale = new Vector3(desiredArrowScale, desiredArrowScale, desiredArrowScale);
     }
