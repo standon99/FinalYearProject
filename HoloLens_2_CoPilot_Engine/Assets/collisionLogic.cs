@@ -9,6 +9,7 @@ public class collisionLogic : MonoBehaviour
     public bool airSpaceTF = false;
     public bool colliderTF = false;
     public float colourIntensity = 0;
+    private Color padCol;
     //Detect collisions between the GameObjects with Colliders attached
     private void OnCollisionEnter(Collision collision)
     {
@@ -102,28 +103,28 @@ public class collisionLogic : MonoBehaviour
 
         bool inAirSpace = transform.GetChild(0).GetComponent<airSpaceLogic>().activated;
         airSpaceTF = inAirSpace;
-        Debug.LogWarning(inAirSpace);
+        //Debug.LogWarning(inAirSpace);
         float timeInAirSpace = transform.GetChild(0).GetComponent<airSpaceLogic>().deltaTime;
         if (colliderTF || airSpaceTF)
         {
             if (airSpaceTF && !colliderTF)
             {
-                int colourIntensity = Mathf.RoundToInt(timeInAirSpace * 5) + 20;
+                int colourIntensity = Mathf.RoundToInt(timeInAirSpace * 10) + 20;
                 if (colourIntensity > 255)
                 {
                     colourIntensity = 255;
                 }
                 Debug.Log(colourIntensity);
-                Color padCol = new Color(colourIntensity, 0, 0);
+                padCol = new Color(255, 255-colourIntensity, 255- colourIntensity);
                 GetComponent<MeshRenderer>().material.color = padCol;
-                Debug.LogWarning("Variable Stay");
-                Debug.LogWarning(colourIntensity);
+                //Debug.LogWarning("Variable Stay");
+                //Debug.LogWarning(colourIntensity);
             }
             else if (colliderTF)
             {
-                Color padCol = Color.red;
+                padCol = Color.red;
                 GetComponent<MeshRenderer>().material.color = padCol;
-                Debug.LogWarning("Set Red Stay");
+                //Debug.LogWarning("Set Red Stay");
             }
         }
         if (!airSpaceTF && !colliderTF)

@@ -56,7 +56,7 @@ public class airSpaceLogic : MonoBehaviour
         {
             endTime = Time.time;
             deltaTime = endTime - startTime;
-            Debug.Log(deltaTime);
+            //Debug.Log(deltaTime);
         }
 
         if (deltaTime > timeThreshold)
