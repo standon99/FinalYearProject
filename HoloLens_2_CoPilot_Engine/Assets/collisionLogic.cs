@@ -109,13 +109,13 @@ public class collisionLogic : MonoBehaviour
         {
             if (airSpaceTF && !colliderTF)
             {
-                int colourIntensity = Mathf.RoundToInt(timeInAirSpace * 10) + 20;
-                if (colourIntensity > 255)
+                float colourIntensity = timeInAirSpace * 0.09f;
+                if (colourIntensity > 1)
                 {
-                    colourIntensity = 255;
+                    colourIntensity = 1;
                 }
-                Debug.Log(colourIntensity);
-                padCol = new Color(255, 255-colourIntensity, 255- colourIntensity);
+                //Debug.Log(colourIntensity);
+                padCol = new Color(1f, 1f-colourIntensity, 1f- colourIntensity);
                 GetComponent<MeshRenderer>().material.color = padCol;
                 //Debug.LogWarning("Variable Stay");
                 //Debug.LogWarning(colourIntensity);

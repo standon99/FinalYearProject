@@ -36,10 +36,10 @@ extern void airSpaceLogic_Update_m9A30B67F703198502487A7D09E50020A1975D651 (void
 extern void airSpaceLogic__ctor_m1FEBED45B31478CE105C1BB39AE4A976514777D9 (void);
 // 0x0000000C System.Void collisionLogic::OnCollisionEnter(UnityEngine.Collision)
 extern void collisionLogic_OnCollisionEnter_mE6E9B511D5A641091C4302A2089C2AA62439CA7C (void);
-// 0x0000000D System.Void collisionLogic::OnCollisionStay(UnityEngine.Collision)
-extern void collisionLogic_OnCollisionStay_m1E5375C0B4F9540C1B783811DC52CCCD98E49341 (void);
-// 0x0000000E System.Void collisionLogic::OnCollisionExit(UnityEngine.Collision)
+// 0x0000000D System.Void collisionLogic::OnCollisionExit(UnityEngine.Collision)
 extern void collisionLogic_OnCollisionExit_mFD93F0F6B3C1487EF346A8EBF344158B0C3258FA (void);
+// 0x0000000E System.Void collisionLogic::Update()
+extern void collisionLogic_Update_m60345FAE724E0C21737AB7A18BD790DC017D1585 (void);
 // 0x0000000F System.Void collisionLogic::.ctor()
 extern void collisionLogic__ctor_m50E2AF09A7F2F85EE9656A12B5E0800A3F63F727 (void);
 // 0x00000010 UnityEngine.Quaternion detectLandingPad::landingLocation()
@@ -80,8 +80,8 @@ static Il2CppMethodPointer s_methodPointers[27] =
 	airSpaceLogic_Update_m9A30B67F703198502487A7D09E50020A1975D651,
 	airSpaceLogic__ctor_m1FEBED45B31478CE105C1BB39AE4A976514777D9,
 	collisionLogic_OnCollisionEnter_mE6E9B511D5A641091C4302A2089C2AA62439CA7C,
-	collisionLogic_OnCollisionStay_m1E5375C0B4F9540C1B783811DC52CCCD98E49341,
 	collisionLogic_OnCollisionExit_mFD93F0F6B3C1487EF346A8EBF344158B0C3258FA,
+	collisionLogic_Update_m60345FAE724E0C21737AB7A18BD790DC017D1585,
 	collisionLogic__ctor_m50E2AF09A7F2F85EE9656A12B5E0800A3F63F727,
 	detectLandingPad_landingLocation_m9733AEA74C75498C7886FBCA240135C18A445961,
 	detectLandingPad_Start_mF422A094B70C8731F70178E43893AB2DAAA29368,
@@ -111,7 +111,7 @@ static const int32_t s_InvokerIndices[27] =
 	7247,
 	5787,
 	5787,
-	5787,
+	7247,
 	7247,
 	7126,
 	7247,

@@ -9388,23 +9388,31 @@ struct airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801  : public MonoBeh
 {
 	// System.Boolean airSpaceLogic::activated
 	bool ___activated_4;
+	// System.Boolean airSpaceLogic::inAirSpace
+	bool ___inAirSpace_5;
 	// System.Single airSpaceLogic::timer
-	float ___timer_5;
+	float ___timer_6;
 	// System.Single airSpaceLogic::startTime
-	float ___startTime_6;
+	float ___startTime_7;
 	// System.Single airSpaceLogic::endTime
-	float ___endTime_7;
+	float ___endTime_8;
 	// System.Single airSpaceLogic::deltaTime
-	float ___deltaTime_8;
+	float ___deltaTime_9;
 	// System.Single airSpaceLogic::timeThreshold
-	float ___timeThreshold_9;
+	float ___timeThreshold_10;
 };
 
 // collisionLogic
 struct collisionLogic_t142DB2B56CFB28E7D036DB062A799A2B6C8F0843  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// System.Boolean collisionLogic::airSpaceTF
+	bool ___airSpaceTF_4;
+	// System.Boolean collisionLogic::colliderTF
+	bool ___colliderTF_5;
 	// System.Single collisionLogic::colourIntensity
-	float ___colourIntensity_4;
+	float ___colourIntensity_6;
+	// UnityEngine.Color collisionLogic::padCol
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___padCol_7;
 };
 
 // detectLandingPad
@@ -10739,12 +10747,12 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6638[18] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6640[7] = 
 {
 	static_cast<int32_t>(offsetof(Adjust_Icon_t737BAF27DA363E17D5CC7A3C27BF93641B81ED1F, ___desiredPos_4)),static_cast<int32_t>(offsetof(Adjust_Icon_t737BAF27DA363E17D5CC7A3C27BF93641B81ED1F, ___desiredRot_5)),static_cast<int32_t>(offsetof(Adjust_Icon_t737BAF27DA363E17D5CC7A3C27BF93641B81ED1F, ___startPos_6)),static_cast<int32_t>(offsetof(Adjust_Icon_t737BAF27DA363E17D5CC7A3C27BF93641B81ED1F, ___startRot_7)),static_cast<int32_t>(offsetof(Adjust_Icon_t737BAF27DA363E17D5CC7A3C27BF93641B81ED1F, ___desiredArrowScale_8)),static_cast<int32_t>(offsetof(Adjust_Icon_t737BAF27DA363E17D5CC7A3C27BF93641B81ED1F, ___Arrow_9)),static_cast<int32_t>(offsetof(Adjust_Icon_t737BAF27DA363E17D5CC7A3C27BF93641B81ED1F, ___Collider_10)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6641[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6641[7] = 
 {
-	static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___activated_4)),static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___timer_5)),static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___startTime_6)),static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___endTime_7)),static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___deltaTime_8)),static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___timeThreshold_9)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6642[1] = 
+	static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___activated_4)),static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___inAirSpace_5)),static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___timer_6)),static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___startTime_7)),static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___endTime_8)),static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___deltaTime_9)),static_cast<int32_t>(offsetof(airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801, ___timeThreshold_10)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6642[4] = 
 {
-	static_cast<int32_t>(offsetof(collisionLogic_t142DB2B56CFB28E7D036DB062A799A2B6C8F0843, ___colourIntensity_4)),};
+	static_cast<int32_t>(offsetof(collisionLogic_t142DB2B56CFB28E7D036DB062A799A2B6C8F0843, ___airSpaceTF_4)),static_cast<int32_t>(offsetof(collisionLogic_t142DB2B56CFB28E7D036DB062A799A2B6C8F0843, ___colliderTF_5)),static_cast<int32_t>(offsetof(collisionLogic_t142DB2B56CFB28E7D036DB062A799A2B6C8F0843, ___colourIntensity_6)),static_cast<int32_t>(offsetof(collisionLogic_t142DB2B56CFB28E7D036DB062A799A2B6C8F0843, ___padCol_7)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6643[6] = 
 {
 	static_cast<int32_t>(offsetof(detectLandingPad_t4D2992C4A895BAB58D250F9F9128431B8A245076, ___Icon_4)),static_cast<int32_t>(offsetof(detectLandingPad_t4D2992C4A895BAB58D250F9F9128431B8A245076, ___Collider_5)),static_cast<int32_t>(offsetof(detectLandingPad_t4D2992C4A895BAB58D250F9F9128431B8A245076, ___stickAngle_6)),static_cast<int32_t>(offsetof(detectLandingPad_t4D2992C4A895BAB58D250F9F9128431B8A245076, ___mag_7)),static_cast<int32_t>(offsetof(detectLandingPad_t4D2992C4A895BAB58D250F9F9128431B8A245076, ___current_8)),static_cast<int32_t>(offsetof(detectLandingPad_t4D2992C4A895BAB58D250F9F9128431B8A245076, ___showCollider_9)),};

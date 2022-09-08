@@ -23126,23 +23126,31 @@ struct airSpaceLogic_t5E8E2B475C2FBADD5F593040A59DC2AE6A823801  : public MonoBeh
 {
 	// System.Boolean airSpaceLogic::activated
 	bool ___activated_4;
+	// System.Boolean airSpaceLogic::inAirSpace
+	bool ___inAirSpace_5;
 	// System.Single airSpaceLogic::timer
-	float ___timer_5;
+	float ___timer_6;
 	// System.Single airSpaceLogic::startTime
-	float ___startTime_6;
+	float ___startTime_7;
 	// System.Single airSpaceLogic::endTime
-	float ___endTime_7;
+	float ___endTime_8;
 	// System.Single airSpaceLogic::deltaTime
-	float ___deltaTime_8;
+	float ___deltaTime_9;
 	// System.Single airSpaceLogic::timeThreshold
-	float ___timeThreshold_9;
+	float ___timeThreshold_10;
 };
 
 // collisionLogic
 struct collisionLogic_t142DB2B56CFB28E7D036DB062A799A2B6C8F0843  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// System.Boolean collisionLogic::airSpaceTF
+	bool ___airSpaceTF_4;
+	// System.Boolean collisionLogic::colliderTF
+	bool ___colliderTF_5;
 	// System.Single collisionLogic::colourIntensity
-	float ___colourIntensity_4;
+	float ___colourIntensity_6;
+	// UnityEngine.Color collisionLogic::padCol
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___padCol_7;
 };
 
 // detectLandingPad

@@ -13,6 +13,8 @@ public class ServerTwo : MonoBehaviour
     volatile bool keepReading = false;
     public static string localIP = "127.0.0.1"; // USE WHEN RUNNING ON LOCAL MACHINE FOR TESTING - GO LINE 45
     //public static string localIP = "160.69.69.125"; // 147 USE WHEN USING WITH HOLOLENS CONENCTED TO CARIS NETWORK
+    // public static string localIP = "160.69.69.111"; // This is ECSE01
+    // public static string localIP = "192.168.11.17"; // This is ECSE01 connected to HRI_VICON1 MUST BE UNCONNECTED
     //public IPAddress setIpAddress = IPAddress.Parse("127.0.0.1");
     public IPAddress setIpAddress = IPAddress.Parse(localIP);
     public int port = 5007;
@@ -43,6 +45,8 @@ public class ServerTwo : MonoBehaviour
         IPHostEntry host;
         string setlocalIP = "127.0.0.1"; // Old
         // string setlocalIP = "160.69.69.125";
+        // string setlocalIP = "160.69.69.111"; // This is ECSE01
+        // string setlocalIP = "192.168.11.17"; // This is ECSE01 connected to HRI_VICON1 MUST BE UNCOMMENTED
         host = Dns.GetHostEntry(Dns.GetHostName());
         foreach (IPAddress ip in host.AddressList)
         {
@@ -128,7 +132,7 @@ public class ServerTwo : MonoBehaviour
                                 lastPosZ = cPosZ;
                                 cPosZ = receivedZ;
                             }
-                            //Debug.Log("Received X is ");
+                            Debug.Log("Received X is ");
                             //Debug.Log(receivedX);
                         }
                         else if (data.Contains("yP"))
@@ -144,7 +148,7 @@ public class ServerTwo : MonoBehaviour
                                 lastPosX = cPosX;
                                 cPosX = receivedX;
                             }
-                            //Debug.Log("Received Y is ");
+                            Debug.Log("Received Y is ");
                             //Debug.Log(receivedY);
                         }
                         if (data.Contains("zP"))
@@ -160,7 +164,7 @@ public class ServerTwo : MonoBehaviour
                                 lastPosY = cPosY;
                                 cPosY = receivedY;
                             }
-                            //Debug.Log("Received Z is ");
+                            Debug.Log("Received Z is ");
                             //Debug.Log(receivedZ);
                         }
                         if (data.Contains("aX"))
